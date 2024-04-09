@@ -1,0 +1,9 @@
+var a = 2;
+var b = 5;
+var aux = a
+a=b
+b=aux
+//se colocar b=a, a resposta será 5, pq eu declarei q a=b, e b=5
+// cria se outra variavel para colocar o valor de a 
+document.write("a:" +a);
+document.write("b:" +b)
