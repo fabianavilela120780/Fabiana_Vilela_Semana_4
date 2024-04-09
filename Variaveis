@@ -1,0 +1,17 @@
+var nome = "Maria";
+    var telefone = "(011) 99999-9999";
+    var profissao = "auxiliar";
+    var salario = 2000;
+    var profissional = ("Dados do funcionário: Nome: " + nome + "  Telefone: " + telefone +
+    "  Cargo: " + profissao + "  Salário: R$ " + salario + " reais.  Possui convênio? " + convenio );
+    
+    document.write(profissional);
+    
+    var convenio = false;
+      if (convenio){
+        document.write("Sim"); 
+      }
+          
+      else {
+        document.write("Não possui.");
+      }
