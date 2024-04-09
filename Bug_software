@@ -1,68 +1,12 @@
-<h2>Exercício 6 A </h2>
-<script>
-    function pulaLinha() {
-        document.write("<br><br>");
-    }
+<h2>Exercício 5</h2> 
+<script> 
+var raio = 3.5;
+var altura = 1.6;
 
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-    }
-    var contador = 1; //se inicializar com 0, pde tirar o sinal de igual do <50
-    while (contador <= 50) {
-        if (contador % 2 !== 0) {//não coloque { e funcionou}
-            mostra(contador + " é impar");
-        } else {
-            mostra(contador + " é par");
-        }
-        contador++;
-    }
-    mostra("fim");
-
-</script>
-
-<h2>Exercício 6 B </h2>
-<script>
-
-    mostra("Múltiplos de 3")
-    var contador = 1;
-    var saida = "";
-    //essa string vazia vai aparecer no 
-    //laço while se o numero for multiplo de 3, usando
-    //o operador += (saida = saida +3)
-    while (contador <= 100) {
-        if (contador % 3 === 0) { saida += contador + " / "; }
-        contador++;
-    }
-    mostra(saida + " ");
-
-</script>
-
-<h2>Exercício 6 C </h2>
-<script>
-
-    mostra("Mostre a seguinte sequência (de 100 até 0, pulando de dois em dois")
-    var saida = "";
-    var contador = 100;
-    while (contador >= 0) {
-        saida += contador + " , ";
-        contador = contador - 2;
-    }
-    mostra(saida + " ");
-</script>
-
-<h2>Exercício 6 PIM </h2>
-
-<script>
-    var p = 1;
-    document.write('"');
-    while (p < 40) {
-        if (p % 4 == 0) {
-            document.write(" PIM ");
-        } else {
-            document.write(p + " ");
-        }
-        p++;
-    }
-    document.write(' PIM!"')
-</script>
+var area = 3.14 * (raio * raio);
+var volume = (area * altura).toFixed(2);//m3
+var volumeLitros = volume *1000;
+//não coloquei a const pi para abrir no navegador
+document.write(" A área é: "+ area);
+document.write(" <br>O volume em m3 é: "+ volume);
+document.write(" <br>O volume em litros é: "+ volumeLitros);
