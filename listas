@@ -1,0 +1,28 @@
+<h2>Exercício 8 A</h2>
+<script>
+    var pessoa = ["Maria", 44, "CPF: 101987654321", 1.60, true];
+    document.write("O array tem " + pessoa.length + " elementos<br>");
+    document.write(" O primeiro elemento é " + pessoa[0]);
+    document.write("<br> O último elemento é " + '"' + pessoa[pessoa.length - 1] + '"');
+    document.write("<br> Os elementos da lista são: " + pessoa);
+</script>
+
+<script>
+ var letras = [];
+  function recebeLetras(){
+   var letra = prompt('Digite uma letra: \n');
+   letras.push(letra);
+  }
+  for (var i =1; i<=5; i++){
+   recebeLetras();
+  }
+
+  document.write('\n<br>'+letras);
+  document.write('\n<br> Primeira letra digitada:\n' + letras[0]);
+  document.write('\n<br> Quarta letra digitada:\n' + letras[3]);
+  document.write('\n<br> Quinta letra digitada:\n' + letras[4]);
+  document.write('\n<br> Quantidade de letras: \n' + letras.length);
+  document.write('\n <br>O tamanho da lista: '+ [letras.length-1]);
+  document.write('\n<br> Última letra digitada:\n' + letras[letras.length-1]);
+
+ </script>
